@@ -348,3 +348,122 @@ nav ul li:first-child a {
         padding: 20px;
     }
 }
+
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+}
+.bottom-section {
+    background-image: url('https://source.unsplash.com/random/1200x600?technology');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 0;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+}
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+.feature {
+    flex: 1;
+    margin-right: 20px;
+}
+.feature h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+.cta {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.stats {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats h2 {
+    font-size: 36px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .top-section, .bottom-content {
+        flex-direction: column;
+    }
+    .column, .feature, .stats {
+        margin-bottom: 20px;
+    }
+}
+
+
+.team-banner {
+    background-image: url('path-to-your-banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: left;
+}
+.team-banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.team-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.team-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.team-description, .team-projects {
+    width: 48%;
+}
+.team-location {
+    margin-bottom: 40px;
+}
+.team-hosting {
+    background-color: #000033;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.hosting-features, .hosting-stats {
+    width: 48%;
+}
+.team-button {
+    display: inline-block;
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
