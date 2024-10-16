@@ -10,6 +10,7 @@
     <meta name="keywords" content="Softwareentwicklung, Webdesign, SEO, CRM, ERP, Hosting">
     <meta name="author" content="SoftwareDirekt">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
 </head>
 
 <body>
@@ -32,15 +33,23 @@
                     <li><a href="#">KONTAKT</a></li>
                 </ul>
             </nav>
-            <button class="call-button">Anrufen</button>
+            <div class="actions">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <button class="call-button">Anrufen</button>
+            </div>
         </div>
     </header>
 
     <div class="video-container">
-        <video autoplay>
+        <!-- <video autoplay>
             <source src="./assets/bgvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <!-- <img src="./assets/bannerbgimage.png" alt=""> -->
     </div>
 
     <div class="content-wrapper">
@@ -277,32 +286,7 @@
         </div>
     </div>
 
-    <script>
-        const slider = document.querySelector('.slider-container');
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
-        let currentIndex = 0;
-
-        // Clone the first slide and append it to the end
-        const firstSlideClone = slides[0].cloneNode(true);
-        slider.appendChild(firstSlideClone);
-
-        function nextSlide() {
-            currentIndex++;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            slider.style.transition = 'transform 1s ease';
-
-            if (currentIndex === totalSlides) {
-                setTimeout(() => {
-                    slider.style.transition = 'none';
-                    currentIndex = 0;
-                    slider.style.transform = 'translateX(0)';
-                }, 1000);
-            }
-        }
-
-        setInterval(nextSlide, 3000);
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
